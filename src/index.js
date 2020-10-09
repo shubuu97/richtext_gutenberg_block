@@ -18,10 +18,10 @@ registerBlockType("custom-block/richtext", {
             setAttributes({ content: updatedContent });
         };
         return (
-            <RichText className={className} tagName="p" onChange={handleChange} value={content} />
+            <RichText className={className} tageName="p" onChange={handleChange} value={content} />
         );
     },
-    save: ({ attributes: { content } }) => {
-        return <RichText.Content tagName="p" value={content} />;
+    save: ({ attributes: { content }, className }) => {
+        return <RichText.Content className={className} tagName="p" value={content} />;
     },
 });

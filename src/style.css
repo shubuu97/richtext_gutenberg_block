@@ -1,3 +1,8 @@
 .wp-block-custom-block-richtext {
+	background-color: yellow;
 	color: red;
+}
+
+.black_bg {
+	background-color: #000;
 }
